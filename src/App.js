@@ -1,6 +1,6 @@
 // App.js
 import React, { useState } from 'react';
-import LandingPage from "./pages/LandingPage"; // Ensure correct casing for the filename
+import LandingPage from "./pages/LandingPage"; // 
 import Charts from './components/Charts';
 import KpiCards from './components/KpiCards';
 import Navbar from './components/Navbar';
@@ -10,11 +10,11 @@ import TransactionHistory from './components/TransactionHistory';
 import './App.css';
 
 function App() {
-    const [currentPage, setCurrentPage] = useState('landing'); // State to track the current page
+    const [currentPage, setCurrentPage] = useState('landing'); // S
 
     const handleArrowClick = () => {
         if (currentPage === 'landing') {
-            setCurrentPage('dashboard'); // Change to the second page
+            setCurrentPage('dashboard'); // it changes to second page
         } else {
             setCurrentPage('landing'); // Optionally allow returning to the landing page
         }
@@ -42,9 +42,9 @@ function App() {
       </div>
     </div>
             )}
-            {/* Optionally include the arrow for navigation */}
+            {/* Optionally we can include the arrow for navigation */}
             <div className="arrow" onClick={handleArrowClick} style={{ cursor: 'pointer', textAlign: 'center', marginTop: '20px' }}>
-                ➔ {/* Simple arrow character, can replace with SVG or icon */}
+                ➔ {/* arrow character, can be replaced with SVG or icon.Up to us */}
             </div>
         </div>
     );
